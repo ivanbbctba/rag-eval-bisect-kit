@@ -1,0 +1,10 @@
+{
+  "snapshot_id": "03-tighter-topk",
+  "top_k": 2,
+  "min_score": 0.0,
+  "title_boost": 1.5,
+  "score_mode": "keyword",
+  "hit_at_k_min": 1.0,
+  "recall_at_k_min": 1.0,
+  "require_citations": true
+}

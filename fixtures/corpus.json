@@ -1,0 +1,44 @@
+{
+  "docs": [
+    {
+      "id": "night-owl",
+      "title": "After-Hours Fleet",
+      "text": "The night owl bus runs from 12:30 a.m. to 4:30 a.m. on Fridays and Saturdays. Late-night service uses the same downtown loop as daytime routes."
+    },
+    {
+      "id": "bike-policy",
+      "title": "Carry-On Rules",
+      "text": "Riders may bring a bicycle on the train during off-peak hours. Folding bikes are allowed at all times. Peak-hour bicycle boarding is restricted on crowded cars."
+    },
+    {
+      "id": "fare-policy",
+      "title": "Payment Windows",
+      "text": "A single fare includes one transfer within 90 minutes. Transfers are encoded on the same card tap. Cash riders receive a paper transfer slip."
+    },
+    {
+      "id": "lost-found",
+      "title": "Property Desk",
+      "text": "Lost backpacks and other items are held at the central lost and found office for 14 days. Bring a photo ID to recover property."
+    },
+    {
+      "id": "route-red",
+      "title": "Trunk Corridor",
+      "text": "Red line stations include Harbor, Midtown, University, and Airport. The red line is the north-south trunk of the municipal rail network."
+    },
+    {
+      "id": "route-blue",
+      "title": "Waterfront Branch",
+      "text": "Blue line stations include Market, Ferry, and Lighthouse. The waterfront branch stays on its own corridor."
+    },
+    {
+      "id": "service-alerts",
+      "title": "Night Notices",
+      "text": "Service alerts are posted on the website and station boards. Alerts do not change the published night owl timetable."
+    },
+    {
+      "id": "accessibility",
+      "title": "Boarding Assistance",
+      "text": "Wheelchair users board through the first door. Operators deploy a ramp on request. Priority seating is marked near the operator."
+    }
+  ]
+}

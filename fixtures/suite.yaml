@@ -1,0 +1,22 @@
+suite_id: transit-toy-v1
+cases:
+  - id: night-owl-hours
+    question: What time does the night owl bus run?
+    gold_doc_ids: [night-owl]
+    must_mention: ["12:30"]
+  - id: bike-on-train
+    question: Can I bring a bicycle on the train?
+    gold_doc_ids: [bike-policy]
+    must_mention: ["off-peak"]
+  - id: fare-transfer
+    question: How do transfers work with one fare?
+    gold_doc_ids: [fare-policy]
+    must_mention: ["90 minutes"]
+  - id: lost-backpack
+    question: Where do I recover a lost backpack?
+    gold_doc_ids: [lost-found]
+    must_mention: ["14 days"]
+  - id: red-line-stations
+    question: Which stations are on the red line?
+    gold_doc_ids: [route-red]
+    must_mention: ["Harbor"]

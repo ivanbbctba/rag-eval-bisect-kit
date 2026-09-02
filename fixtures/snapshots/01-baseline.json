@@ -1,0 +1,10 @@
+{
+  "snapshot_id": "01-baseline",
+  "top_k": 4,
+  "min_score": 0.0,
+  "title_boost": 0.0,
+  "score_mode": "keyword",
+  "hit_at_k_min": 1.0,
+  "recall_at_k_min": 1.0,
+  "require_citations": true
+}
