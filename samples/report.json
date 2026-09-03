@@ -1,0 +1,437 @@
+{
+  "suite_id": "transit-toy-v1",
+  "snapshot_id": "01-baseline",
+  "passed": true,
+  "passed_cases": 5,
+  "total_cases": 5,
+  "config": {
+    "top_k": 4,
+    "min_score": 0.0,
+    "title_boost": 0.0,
+    "score_mode": "keyword",
+    "hit_at_k_min": 1.0,
+    "recall_at_k_min": 1.0,
+    "mrr_min": 0.0,
+    "precision_at_k_min": 0.0,
+    "require_citations": true,
+    "snapshot_id": "01-baseline"
+  },
+  "cases": [
+    {
+      "case_id": "night-owl-hours",
+      "question": "What time does the night owl bus run?",
+      "passed": true,
+      "retrieved_ids": [
+        "night-owl",
+        "service-alerts",
+        "bike-policy",
+        "accessibility"
+      ],
+      "citations": [
+        "night-owl",
+        "service-alerts",
+        "bike-policy",
+        "accessibility"
+      ],
+      "answer": "The night owl bus runs from 12:30 a.m. to 4:30 a.m. on Fridays and Saturdays. Late-night service uses the same downtown loop as daytime routes. Service alerts are posted on the website and station boards. Alerts do not change the published night owl timetable. Riders may bring a bicycle on the train during off-peak hours. Folding bikes are allowed at all times. Peak-hour bicycle boarding is restricted on crowded cars. Wheelchair users board through the first door. Operators deploy a ramp on request. Priority seating is marked near the operator.",
+      "metrics": [
+        {
+          "id": "A1",
+          "name": "hit_at_k",
+          "value": 1.0,
+          "threshold": 1.0,
+          "passed": true,
+          "gating": true,
+          "detail": "at least one gold document appears in the retrieved set"
+        },
+        {
+          "id": "A2",
+          "name": "recall_at_k",
+          "value": 1.0,
+          "threshold": 1.0,
+          "passed": true,
+          "gating": true,
+          "detail": "fraction of gold documents retrieved"
+        },
+        {
+          "id": "A3",
+          "name": "mrr",
+          "value": 1.0,
+          "threshold": null,
+          "passed": true,
+          "gating": false,
+          "detail": "reciprocal rank of the first gold document"
+        },
+        {
+          "id": "A4",
+          "name": "precision_at_k",
+          "value": 0.25,
+          "threshold": null,
+          "passed": true,
+          "gating": false,
+          "detail": "fraction of retrieved documents that are gold"
+        },
+        {
+          "id": "A5",
+          "name": "must_mention",
+          "value": 1.0,
+          "threshold": 1.0,
+          "passed": true,
+          "gating": true,
+          "detail": "all required terms present"
+        },
+        {
+          "id": "A6",
+          "name": "forbidden",
+          "value": 1.0,
+          "threshold": null,
+          "passed": true,
+          "gating": true,
+          "detail": "no forbidden terms"
+        },
+        {
+          "id": "A7",
+          "name": "citation_support",
+          "value": 1.0,
+          "threshold": 1.0,
+          "passed": true,
+          "gating": true,
+          "detail": "all citations were retrieved"
+        }
+      ]
+    },
+    {
+      "case_id": "bike-on-train",
+      "question": "Can I bring a bicycle on the train?",
+      "passed": true,
+      "retrieved_ids": [
+        "bike-policy",
+        "lost-found",
+        "accessibility",
+        "fare-policy"
+      ],
+      "citations": [
+        "bike-policy",
+        "lost-found",
+        "accessibility",
+        "fare-policy"
+      ],
+      "answer": "Riders may bring a bicycle on the train during off-peak hours. Folding bikes are allowed at all times. Peak-hour bicycle boarding is restricted on crowded cars. Lost backpacks and other items are held at the central lost and found office for 14 days. Bring a photo ID to recover property. Wheelchair users board through the first door. Operators deploy a ramp on request. Priority seating is marked near the operator. A single fare includes one transfer within 90 minutes. Transfers are encoded on the same card tap. Cash riders receive a paper transfer slip.",
+      "metrics": [
+        {
+          "id": "A1",
+          "name": "hit_at_k",
+          "value": 1.0,
+          "threshold": 1.0,
+          "passed": true,
+          "gating": true,
+          "detail": "at least one gold document appears in the retrieved set"
+        },
+        {
+          "id": "A2",
+          "name": "recall_at_k",
+          "value": 1.0,
+          "threshold": 1.0,
+          "passed": true,
+          "gating": true,
+          "detail": "fraction of gold documents retrieved"
+        },
+        {
+          "id": "A3",
+          "name": "mrr",
+          "value": 1.0,
+          "threshold": null,
+          "passed": true,
+          "gating": false,
+          "detail": "reciprocal rank of the first gold document"
+        },
+        {
+          "id": "A4",
+          "name": "precision_at_k",
+          "value": 0.25,
+          "threshold": null,
+          "passed": true,
+          "gating": false,
+          "detail": "fraction of retrieved documents that are gold"
+        },
+        {
+          "id": "A5",
+          "name": "must_mention",
+          "value": 1.0,
+          "threshold": 1.0,
+          "passed": true,
+          "gating": true,
+          "detail": "all required terms present"
+        },
+        {
+          "id": "A6",
+          "name": "forbidden",
+          "value": 1.0,
+          "threshold": null,
+          "passed": true,
+          "gating": true,
+          "detail": "no forbidden terms"
+        },
+        {
+          "id": "A7",
+          "name": "citation_support",
+          "value": 1.0,
+          "threshold": 1.0,
+          "passed": true,
+          "gating": true,
+          "detail": "all citations were retrieved"
+        }
+      ]
+    },
+    {
+      "case_id": "fare-transfer",
+      "question": "How do transfers work with one fare?",
+      "passed": true,
+      "retrieved_ids": [
+        "fare-policy",
+        "accessibility",
+        "bike-policy",
+        "lost-found"
+      ],
+      "citations": [
+        "fare-policy",
+        "accessibility",
+        "bike-policy",
+        "lost-found"
+      ],
+      "answer": "A single fare includes one transfer within 90 minutes. Transfers are encoded on the same card tap. Cash riders receive a paper transfer slip. Wheelchair users board through the first door. Operators deploy a ramp on request. Priority seating is marked near the operator. Riders may bring a bicycle on the train during off-peak hours. Folding bikes are allowed at all times. Peak-hour bicycle boarding is restricted on crowded cars. Lost backpacks and other items are held at the central lost and found office for 14 days. Bring a photo ID to recover property.",
+      "metrics": [
+        {
+          "id": "A1",
+          "name": "hit_at_k",
+          "value": 1.0,
+          "threshold": 1.0,
+          "passed": true,
+          "gating": true,
+          "detail": "at least one gold document appears in the retrieved set"
+        },
+        {
+          "id": "A2",
+          "name": "recall_at_k",
+          "value": 1.0,
+          "threshold": 1.0,
+          "passed": true,
+          "gating": true,
+          "detail": "fraction of gold documents retrieved"
+        },
+        {
+          "id": "A3",
+          "name": "mrr",
+          "value": 1.0,
+          "threshold": null,
+          "passed": true,
+          "gating": false,
+          "detail": "reciprocal rank of the first gold document"
+        },
+        {
+          "id": "A4",
+          "name": "precision_at_k",
+          "value": 0.25,
+          "threshold": null,
+          "passed": true,
+          "gating": false,
+          "detail": "fraction of retrieved documents that are gold"
+        },
+        {
+          "id": "A5",
+          "name": "must_mention",
+          "value": 1.0,
+          "threshold": 1.0,
+          "passed": true,
+          "gating": true,
+          "detail": "all required terms present"
+        },
+        {
+          "id": "A6",
+          "name": "forbidden",
+          "value": 1.0,
+          "threshold": null,
+          "passed": true,
+          "gating": true,
+          "detail": "no forbidden terms"
+        },
+        {
+          "id": "A7",
+          "name": "citation_support",
+          "value": 1.0,
+          "threshold": 1.0,
+          "passed": true,
+          "gating": true,
+          "detail": "all citations were retrieved"
+        }
+      ]
+    },
+    {
+      "case_id": "lost-backpack",
+      "question": "Where do I recover a lost backpack?",
+      "passed": true,
+      "retrieved_ids": [
+        "lost-found",
+        "accessibility",
+        "bike-policy",
+        "fare-policy"
+      ],
+      "citations": [
+        "lost-found",
+        "accessibility",
+        "bike-policy",
+        "fare-policy"
+      ],
+      "answer": "Lost backpacks and other items are held at the central lost and found office for 14 days. Bring a photo ID to recover property. Wheelchair users board through the first door. Operators deploy a ramp on request. Priority seating is marked near the operator. Riders may bring a bicycle on the train during off-peak hours. Folding bikes are allowed at all times. Peak-hour bicycle boarding is restricted on crowded cars. A single fare includes one transfer within 90 minutes. Transfers are encoded on the same card tap. Cash riders receive a paper transfer slip.",
+      "metrics": [
+        {
+          "id": "A1",
+          "name": "hit_at_k",
+          "value": 1.0,
+          "threshold": 1.0,
+          "passed": true,
+          "gating": true,
+          "detail": "at least one gold document appears in the retrieved set"
+        },
+        {
+          "id": "A2",
+          "name": "recall_at_k",
+          "value": 1.0,
+          "threshold": 1.0,
+          "passed": true,
+          "gating": true,
+          "detail": "fraction of gold documents retrieved"
+        },
+        {
+          "id": "A3",
+          "name": "mrr",
+          "value": 1.0,
+          "threshold": null,
+          "passed": true,
+          "gating": false,
+          "detail": "reciprocal rank of the first gold document"
+        },
+        {
+          "id": "A4",
+          "name": "precision_at_k",
+          "value": 0.25,
+          "threshold": null,
+          "passed": true,
+          "gating": false,
+          "detail": "fraction of retrieved documents that are gold"
+        },
+        {
+          "id": "A5",
+          "name": "must_mention",
+          "value": 1.0,
+          "threshold": 1.0,
+          "passed": true,
+          "gating": true,
+          "detail": "all required terms present"
+        },
+        {
+          "id": "A6",
+          "name": "forbidden",
+          "value": 1.0,
+          "threshold": null,
+          "passed": true,
+          "gating": true,
+          "detail": "no forbidden terms"
+        },
+        {
+          "id": "A7",
+          "name": "citation_support",
+          "value": 1.0,
+          "threshold": 1.0,
+          "passed": true,
+          "gating": true,
+          "detail": "all citations were retrieved"
+        }
+      ]
+    },
+    {
+      "case_id": "red-line-stations",
+      "question": "Which stations are on the red line?",
+      "passed": true,
+      "retrieved_ids": [
+        "route-red",
+        "route-blue",
+        "service-alerts",
+        "accessibility"
+      ],
+      "citations": [
+        "route-red",
+        "route-blue",
+        "service-alerts",
+        "accessibility"
+      ],
+      "answer": "Red line stations include Harbor, Midtown, University, and Airport. The red line is the north-south trunk of the municipal rail network. Blue line stations include Market, Ferry, and Lighthouse. The waterfront branch stays on its own corridor. Service alerts are posted on the website and station boards. Alerts do not change the published night owl timetable. Wheelchair users board through the first door. Operators deploy a ramp on request. Priority seating is marked near the operator.",
+      "metrics": [
+        {
+          "id": "A1",
+          "name": "hit_at_k",
+          "value": 1.0,
+          "threshold": 1.0,
+          "passed": true,
+          "gating": true,
+          "detail": "at least one gold document appears in the retrieved set"
+        },
+        {
+          "id": "A2",
+          "name": "recall_at_k",
+          "value": 1.0,
+          "threshold": 1.0,
+          "passed": true,
+          "gating": true,
+          "detail": "fraction of gold documents retrieved"
+        },
+        {
+          "id": "A3",
+          "name": "mrr",
+          "value": 1.0,
+          "threshold": null,
+          "passed": true,
+          "gating": false,
+          "detail": "reciprocal rank of the first gold document"
+        },
+        {
+          "id": "A4",
+          "name": "precision_at_k",
+          "value": 0.25,
+          "threshold": null,
+          "passed": true,
+          "gating": false,
+          "detail": "fraction of retrieved documents that are gold"
+        },
+        {
+          "id": "A5",
+          "name": "must_mention",
+          "value": 1.0,
+          "threshold": 1.0,
+          "passed": true,
+          "gating": true,
+          "detail": "all required terms present"
+        },
+        {
+          "id": "A6",
+          "name": "forbidden",
+          "value": 1.0,
+          "threshold": null,
+          "passed": true,
+          "gating": true,
+          "detail": "no forbidden terms"
+        },
+        {
+          "id": "A7",
+          "name": "citation_support",
+          "value": 1.0,
+          "threshold": 1.0,
+          "passed": true,
+          "gating": true,
+          "detail": "all citations were retrieved"
+        }
+      ]
+    }
+  ],
+  "extra": {}
+}
