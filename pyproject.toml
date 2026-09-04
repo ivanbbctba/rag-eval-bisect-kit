@@ -6,6 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "rag-eval-bisect-kit"
 version = "0.1.0"
 description = "Portable Layer A RAG evaluation with report compare and config-snapshot bisect."
+readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "GPL-3.0-or-later" }
 authors = [{ name = "Ivan Beira" }]
