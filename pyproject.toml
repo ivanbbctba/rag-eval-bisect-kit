@@ -11,6 +11,8 @@ license = { text = "GPL-3.0-or-later" }
 authors = [{ name = "Ivan Beira" }]
 dependencies = [
     "pydantic>=2.6",
+    "fastapi>=0.110",
+    "uvicorn>=0.27",
     "pyyaml>=6.0",
 ]
 
